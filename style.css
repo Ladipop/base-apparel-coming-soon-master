@@ -85,7 +85,7 @@ body {
   width: 100%;
   border-radius: 50px;
   border: 0.3px solid var(--Desaturated-Red);
-  padding: 0.5rem 5.5rem 0.5rem 1.5rem;
+  padding: 0.5rem 10.5rem 0.5rem 1.5rem;
   min-height: 48px;
   background: none;
   font-size: 0.65rem;
@@ -130,6 +130,7 @@ body {
 .error-message {
   color: red;
   font-size: 0.7rem;
+  margin-left: 1.5rem;
 }
 .image-container {
   background: url(images/hero-desktop.jpg);
@@ -147,6 +148,23 @@ body {
   }
 }
 
+@media screen and (max-width: 1176px) {
+  .email-background-img {
+    background-position-x: 65%;
+  }
+}
+
+@media screen and (max-width: 1084px) {
+  .email-background-img {
+    background-position-x: 60%;
+  }
+}
+
+@media screen and (max-width: 857px) {
+  .email-background-img {
+    background-position-x: 57%;
+  }
+}
 @media screen and (max-width: 950px) {
   .text-content {
     width: 75%;
@@ -185,13 +203,17 @@ body {
   .form-field {
     width: 80%;
     margin: 0 auto;
+    max-width: 340px;
     /* margin-left: -47.996px; */
   }
-  .form-field {
-    max-width: 340px;
+  .email-field {
+    padding-right: 9rem;
   }
   .btn {
     width: 6rem;
+  }
+  .email-background-img {
+    background-position-x: 67%;
   }
 }
 
@@ -201,9 +223,16 @@ body {
     line-height: 1.3;
   }
 }
-
+@media screen and (max-width: 400px) {
+  .email-background-img {
+    background-position-x: 63%;
+  }
+}
 @media screen and (max-width: 350px) {
   .btn {
     width: 5rem;
+  }
+  .email-field {
+    padding-right: 7.9rem;
   }
 }
